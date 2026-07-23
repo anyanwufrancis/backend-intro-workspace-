@@ -3,8 +3,8 @@
 
 import http from 'http';                          // built-in Node module
 import chalk from 'chalk';                          // npm package
-import { formatTimestamp } from '../formatter.mjs';   // our ES Module
-import logger from '../logger.js';                    // our CommonJS module
+import { formatTimestamp } from './formatter.mjs';   // our ES Module
+import logger from './logger.js';                    // our CommonJS module
 
 // When an ESM file imports a CJS file, the whole module.exports object
 // comes through as the "default" import. So we pull the two functions
